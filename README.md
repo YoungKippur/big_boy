@@ -1,6 +1,6 @@
 ## big_boy
 Ros2 Humble - RPLidar A1 - Raspberry Pi 4 - Old hoverboard
-## Run simulation
+### Run simulation
 ```
 ros2 launch big_boy launch_sim.launch.py world:=./src/big_boy/worlds/obstacles.world
 ``` 
