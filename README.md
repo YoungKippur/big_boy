@@ -6,6 +6,7 @@ Ros2 Humble - RPLidar A1 - Raspberry Pi 4 - Old hoverboard
 ### Run robot
 ```sudo chmod 777 /dev/serial/by-id/usb-1a86_USB_Serial-if00-port0``` \
 ```ros2 launch big_boy launch_robot.launch.py```\
+\
 If you wanna drive it, use:\
 ```ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args -r /cmd_vel:=/diff_cont/cmd_vel_unstamped```
 ### Run simulation
