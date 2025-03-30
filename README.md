@@ -17,7 +17,7 @@ If you wanna drive it, use:\
 > If you are not using ros2 control on the simulation, should run this instead \
 > ```ros2 run teleop_twist_keyboard teleop_twist_keyboard```
 ### Test mapping or localization
-```ros2 launch slam_toolbox online_async_launch.py slam_params_file:=/home/kipp/ros2_ws/src/big_boy/config/mapper_params_online_async.yaml use_sim_time:=true```
+<code>ros2 launch slam_toolbox online_async_launch.py slam_params_file:=/home/kipp/ros2_ws/src/big_boy/config/mapper_params_online_async.yaml use_sim_time:=true</code>
 ## Packages
 * [rplidar_ros](https://github.com/Slamtec/rplidar_ros/tree/dev-ros2)
 * [hoverboard_driver](https://github.com/hoverboard-robotics/hoverboard-driver/tree/humble)
