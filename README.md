@@ -33,7 +33,7 @@ ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args -r /cmd_vel:=/di
 ```bash 
 ros2 launch slam_toolbox online_async_launch.py slam_params_file:=/home/kipp/ros2_ws/src/big_boy/config/mapper_params_online_async.yaml use_sim_time:=true
 ```
-### Run localization (Slam AMCL)
+### Run localization (AMCL)
 ```bash 
 ros2 run nav2_map_server map_server --ros-args -p yaml_file_name:=my_map_save.yaml -p use_sim_time:=true
 ```
