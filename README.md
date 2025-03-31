@@ -35,7 +35,7 @@ ros2 launch slam_toolbox online_async_launch.py slam_params_file:=/home/kipp/ros
 ```
 ### Run localization (AMCL)
 ```bash 
-ros2 run nav2_map_server map_server --ros-args -p yaml_file_name:=my_map_save.yaml -p use_sim_time:=true
+ros2 run nav2_map_server map_server --ros-args -p yaml_filename:=my_map_save.yaml -p use_sim_time:=true
 ```
 ```bash 
 ros2 run nav2_util lifecycle_bringup map_server
