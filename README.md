@@ -35,7 +35,7 @@ ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args -r /cmd_vel:=/di
 > ```use_sim_time:=false```
 #### Run mapping or localization
 ```bash 
-ros2 launch big_boy  online_async_launch.py use_sim_time:=true
+ros2 launch big_boy online_async_launch.py use_sim_time:=true
 ```
 #### Run navigation
 ```bash 
