@@ -30,6 +30,9 @@ ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args -r /cmd_vel:=/di
 > If you are not using ros2 control on the simulation, should run this instead \
 > ```ros2 run teleop_twist_keyboard teleop_twist_keyboard```
 ### Using Slam Toolbox
+> **Warning** \
+> If you are not using the simulation, should change this part \
+> ```use_sim_time:=false```
 #### Run mapping or localization
 ```bash 
 ros2 launch big_boy  online_async_launch.py use_sim_time:=true
@@ -39,6 +42,9 @@ ros2 launch big_boy  online_async_launch.py use_sim_time:=true
 ros2 launch big_boy navigation_launch.py use_sim_time:=true
 ```
 ### Using AMCL
+> **Warning** \
+> If you are not using the simulation, should change this part \
+> ```use_sim_time:=false```
 #### Run localization (Hard)
 ```bash 
 ros2 run nav2_map_server map_server --ros-args -p yaml_filename:=my_map_save.yaml -p use_sim_time:=true
