@@ -41,7 +41,7 @@ ros2 launch big_boy online_async_launch.py use_sim_time:=true
 ```bash 
 ros2 launch big_boy navigation_launch.py use_sim_time:=true
 ```
-### Using AMCL
+### Using AMCL (Not tested)
 > **Warning** \
 > If you are not using the simulation, should change this part \
 > ```use_sim_time:=false```
