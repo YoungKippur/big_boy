@@ -29,11 +29,17 @@ ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args -r /cmd_vel:=/di
 > **Warning** \
 > If you are not using ros2 control on the simulation, should run this instead \
 > ```ros2 run teleop_twist_keyboard teleop_twist_keyboard```
-### Run mapping or localization (Slam Toolbox)
+### Slam Toolbox
+## Run mapping or localization
 ```bash 
-ros2 launch slam_toolbox online_async_launch.py slam_params_file:=/home/kipp/ros2_ws/src/big_boy/config/mapper_params_online_async.yaml use_sim_time:=true
+ros2 launch big_boy  online_async_launch.py use_sim_time:=true
 ```
-### Run localization (AMCL)
+## Run navigation
+```bash 
+ros2 launch big_boy navigation_launch.py use_sim_time:=true
+```
+### AMCL
+## Run localization (Hard)
 ```bash 
 ros2 run nav2_map_server map_server --ros-args -p yaml_filename:=my_map_save.yaml -p use_sim_time:=true
 ```
@@ -43,6 +49,14 @@ ros2 run nav2_util lifecycle_bringup map_server
 ```bash 
 ros2 run nav2_amcl amcl --ros-args -p use_sim_time:=true
 ```
-## Packages
+## Run localization (Easy)
+```bash 
+ros2 launch big_boy localization_launch.py map:=./my_map_save.yaml use_sim_time:=true
+```
+## Run navigation
+```bash 
+ros2 launch big_boy navigation_launch.py use_sim_time:=true map_subscribe_transient_local:=true
+```
+### Packages
 * [rplidar_ros](https://github.com/Slamtec/rplidar_ros/tree/dev-ros2)
 * [hoverboard_driver](https://github.com/hoverboard-robotics/hoverboard-driver/tree/humble)
