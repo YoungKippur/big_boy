@@ -1,4 +1,4 @@
-## big_boy
+## Big Boy
 Ros2 Humble - Ubuntu 22.04 (Jammy) - RPLidar A1 - Raspberry Pi 4 - Old hoverboard
 
 ### Run lidar
